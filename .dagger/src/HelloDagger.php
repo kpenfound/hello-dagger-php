@@ -108,7 +108,7 @@ class HelloDagger
     #[Doc('Source directory to develop')] #[DefaultPath('/')] Directory $source
   ): string {
     // Get the Github issue
-    $issueClient = dag()->githubIssue(['token' => $githubToken]);
+    $issueClient = dag()->githubIssue(token: $githubToken);
     $issue = $issueClient->read($repository, $issueID);
 
     // Get information from the Github issue
