@@ -10,6 +10,7 @@ use Dagger\Attribute\DefaultPath;
 use Dagger\Attribute\Doc;
 use Dagger\Container;
 use Dagger\Directory;
+use Dagger\Secret;
 
 use function Dagger\dag;
 
